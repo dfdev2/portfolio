@@ -260,13 +260,10 @@ body {
   margin: 0rem 1.25rem 0rem 0rem;
 }
 
-.menu-header .select__body {
+.menu-header .select_menu-header__language .select__body {
   position: absolute;
   z-index: 5;
-}
-
-.menu-header .select__options {
-  max-width: 1.5625rem;
+  width: 1.5625rem;
 }
 
 .icon-menu {
@@ -411,80 +408,17 @@ body {
   gap: 1.25rem;
 }
 
-.contact__send {
-  padding-bottom: 1.25rem;
-  font-size: 1.375rem;
-  font-weight: 600;
-}
-
-.contact__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1.25rem;
-  max-width: 21.875rem;
-  background-color: #f2f2f2;
-  border: 0.1875rem solid #d6dfd6;
-  border-radius: 0.3125rem;
-}
-
-.contact__name {
-  display: block;
-}
-
-.contact__email {
-  display: block;
-}
-
-.contact__message {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 18.75rem;
-  height: 6.25rem;
-  border: 0.0625rem solid #d6dfd6;
-  border-radius: 0.3125rem;
-  margin-bottom: 1.25rem;
-  margin-top: 0.3125rem;
-  padding: 0.3125rem 0.625rem;
-}
-
-.contact__button {
-  background-color: #49ad09;
-  padding: 0.625rem 1.875rem;
-  border-radius: 0.3125rem;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.0625rem;
-  -webkit-transition: background-color 0.3s ease 0s;
-  -o-transition: background-color 0.3s ease 0s;
-  transition: background-color 0.3s ease 0s;
-}
-
-.contact__button:hover {
-  background-color: #3b8e08;
-}
-
 .contact__info {
   margin: 0 auto;
   padding: 1.25rem;
 }
 
-.contact__hello {
+.contact__title {
   font-size: 1.25rem;
   line-height: 1.3;
 }
 
-.contact__hello:not(:last-child) {
+.contact__title:not(:last-child) {
   margin-bottom: 0.625rem;
 }
 
@@ -507,193 +441,71 @@ body {
   height: 2.5rem;
 }
 
-.contact__name,
-.contact__email {
+.form {
+  padding: 1.25rem;
+  background-color: #f2f2f2;
+  border: 0.1875rem solid #d6dfd6;
+  border-radius: 0.3125rem;
+}
+
+.form__item {
+  margin-bottom: 0.9375rem;
+}
+
+.form__lable {
+  display: block;
+  margin-bottom: 0.625rem;
+}
+
+.form__title {
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.form__input {
   height: 2.5rem;
-  width: 18.75rem;
+  width: 100%;
   border-radius: 0.3125rem;
   border: 0.0625rem solid #d6dfd6;
+  padding: 0.625rem;
+}
+
+.form__input._error {
+  -webkit-box-shadow: 0 0 15px red;
+          box-shadow: 0 0 15px red;
+}
+
+.form__message {
+  width: 100%;
+  min-height: 7.5rem;
+  resize: vertical;
+  border: 0.0625rem solid #d6dfd6;
+  border-radius: 0.3125rem;
   margin-bottom: 1.25rem;
   margin-top: 0.3125rem;
-  padding-left: 0.625rem;
+  padding: 0.3125rem 0.625rem;
+}
+
+.form__button {
+  background-color: #49ad09;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.form__button:hover {
+  background-color: #3b8e08;
 }
 
 .page {
   min-width: 0;
-}
-
-.hystmodal__opened {
-  background-color: green;
-  position: fixed;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.hystmodal__shadow {
-  position: fixed;
-  border: none;
-  display: block;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 98;
-  opacity: 0;
-  -webkit-transition: opacity 0.15s ease;
-  -o-transition: opacity 0.15s ease;
-  transition: opacity 0.15s ease;
-  background-color: black;
-}
-
-.hystmodal__shadow--show {
-  pointer-events: auto;
-  opacity: 0.6;
-}
-
-.hystmodal {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  opacity: 1;
-  pointer-events: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  z-index: 99;
-  visibility: hidden;
-}
-
-.hystmodal--active {
-  opacity: 1;
-}
-
-.hystmodal--moved,
-.hystmodal--active {
-  pointer-events: auto;
-  visibility: visible;
-}
-
-.hystmodal__wrap {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  width: 100%;
-  min-height: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hystmodal__window {
-  margin: 50px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  background: #fff;
-  width: 600px;
-  max-width: 100%;
-  overflow: visible;
-  -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-  transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-  -o-transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
-  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
-  opacity: 0;
-}
-
-.hystmodal--active .hystmodal__window {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-}
-
-.hystmodal__close {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: -40px;
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Cpath fill=%27%23fff%27 stroke=%27%23fff%27 stroke-linecap=%27square%27 stroke-miterlimit=%2750%27 stroke-width=%272%27 d=%27M22 2L2 22%27/%3E%3Cpath fill=%27none%27 stroke=%27%23fff%27 stroke-linecap=%27square%27 stroke-miterlimit=%2750%27 stroke-width=%272%27 d=%27M2 2l20 20%27/%3E%3C/svg%3E");
-  background-size: 100% 100%;
-  border: none;
-  font-size: 0;
-  cursor: pointer;
-  outline: none;
-}
-
-.hystmodal__close:focus {
-  outline: 2px dotted #afb3b9;
-  outline-offset: 2px;
-}
-
-.contact-popup {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-
-.contact-popup__item {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.contact-popup__telegram img {
-  width: 40px;
-  height: 40px;
-}
-
-.contact-popup__whatsapp img {
-  width: 45px;
-  height: 45px;
 }
 
 @media (min-width: 85em) {
@@ -719,20 +531,6 @@ body {
 
   .body-portfolio__item {
     gap: 3.125rem;
-  }
-}
-
-@media all and (max-width: 767px) {
-  .hystmodal__close {
-    top: 10px;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Cpath fill=%27%23fff%27 stroke=%27%23111%27 stroke-linecap=%27square%27 stroke-miterlimit=%2750%27 stroke-width=%272%27 d=%27M22 2L2 22%27/%3E%3Cpath fill=%27none%27 stroke=%27%23111%27 stroke-linecap=%27square%27 stroke-miterlimit=%2750%27 stroke-width=%272%27 d=%27M2 2l20 20%27/%3E%3C/svg%3E");
-  }
-
-  .hystmodal__window {
-    margin: 0;
   }
 }
 
@@ -899,21 +697,16 @@ body {
     gap: 1.5625rem;
   }
 
-  .contact__form {
-    max-width: 18.75rem;
-    padding: 0.625rem;
-  }
-
-  .contact__message {
-    max-width: 16.875rem;
-  }
-
   .contact__info {
     padding: 0.625rem;
   }
 
-  .contact__name,
-  .contact__email {
+  .form {
+    max-width: 18.75rem;
+    padding: 0.625rem;
+  }
+
+  .form__input {
     max-width: 16.875rem;
     height: 1.875rem;
   }
