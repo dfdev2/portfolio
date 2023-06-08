@@ -260,10 +260,55 @@ body {
   margin: 0rem 1.25rem 0rem 0rem;
 }
 
-.menu-header .select_menu-header__language .select__body {
+.menu-header__item {
+  position: relative;
+}
+
+.menu-header__item::before {
+  content: "";
   position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #49ad09;
+  scale: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-header__sel {
+  position: relative;
+  padding: 2px;
+}
+
+.menu-header__sel::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: scale 0.3s ease 0s;
+  -o-transition: scale 0.3s ease 0s;
+  transition: scale 0.3s ease 0s;
+  border: 0px solid #49ad09;
+  border-radius: 3px;
+  scale: 0;
+}
+
+.menu-header__language {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  cursor: pointer;
   z-index: 5;
-  width: 1.5625rem;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 3px;
 }
 
 .icon-menu {
@@ -434,11 +479,42 @@ body {
 
 .contact__number {
   min-width: 8.125rem;
+  position: relative;
+}
+
+.contact__number::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  -webkit-transition: scale 0.3s ease 0s;
+  -o-transition: scale 0.3s ease 0s;
+  transition: scale 0.3s ease 0s;
+  background-color: #49ad09;
+  scale: 0;
 }
 
 .contact__image-ibg {
   width: 2.5rem;
   height: 2.5rem;
+  position: relative;
+}
+
+.contact__image-ibg::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: -14%;
+  left: -12%;
+  border-radius: 50%;
+  -webkit-transition: scale 0.3s ease 0s;
+  -o-transition: scale 0.3s ease 0s;
+  transition: scale 0.3s ease 0s;
+  border: 0px solid #49ad09;
+  scale: 0;
 }
 
 .form {
@@ -746,12 +822,13 @@ body {
     background-color: #3c8f09;
   }
 
-  .menu-header__link:hover {
-    text-decoration: underline;
-    color: #49ad09;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+  .menu-header__item:hover:before {
+    scale: 1;
+  }
+
+  .menu-header__sel:hover::before {
+    scale: 1;
+    border: 2px solid #49ad09;
   }
 
   .body-portfolio__card:hover {
@@ -760,5 +837,14 @@ body {
     transition: all 0.3s ease 0s;
     -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+  }
+
+  .contact__number:hover::before {
+    scale: 1;
+  }
+
+  .contact__image-ibg:hover::before {
+    scale: 1;
+    border: 2px solid #49ad09;
   }
 }

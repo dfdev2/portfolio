@@ -1,413 +1,251 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <title>portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20230528153525" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <!-- <meta name="robots" content="noindex, nofollow"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <div class="header__logo">
-            <picture
-              ><source srcset="img/df.webp" type="image/webp" />
-              <img src="img/df.png?_v=1685280925486" alt="logo"
-            /></picture>
-          </div>
-          <div
-            data-da=".menu-header__body, 768"
-            class="header__menu menu-header">
-            <ul class="menu-header__list">
-              <li class="menu-header__item">
-                <a href="#cont" class="menu-header__link">Контакты</a>
-              </li>
-              <li class="menu-header__item">
-                <a href="#port" class="menu-header__link">Портфолио</a>
-              </li>
-              <select name="form[]" class="menu-header__language">
-                <option class="menu-header__ru" value="1">Ру</option>
-                <option class="menu-header__en" value="2">En</option>
-                <option class="menu-header__de" value="3">De</option>
-              </select>
-            </ul>
-          </div>
-          <div class="menu-header__body"></div>
-          <div class="header__icon-menu icon-menu">
-            <span></span>
-          </div>
-        </div>
-        <div class="header__circle">
-          <picture
-            ><source srcset="img/Ellipse.webp" type="image/webp" />
-            <img src="img/Ellipse.png?_v=1685280925486" alt="Ellipse"
-          /></picture>
-        </div>
-      </header>
+<head>
+	<title>portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230608172004">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-      <main class="page">
-        <section class="page-main">
-          <div class="main__container">
-            <h1 id="main-title" class="main__title">Выполненые работы</h1>
-          </div>
-        </section>
-        <section class="page-portfolio portfolio">
-          <div class="portfolio__container">
-            <h2 id="main-portfolio" class="portfolio__title">Портфолио</h2>
-            <div class="portfolio__block">
-              <div id="port" class="portfolio">
-                <div class="portfolio__container">
-                  <div class="portfolio__body body-portfolio">
-                    <div class="body-portfolio__item">
-                      <!-- relvise -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          relvise
-                        </div>
-                        <div class="body-portfolio__category">landing</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/relvise/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/relvise.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/relvise.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием GULP, с технологией BEM,
-                            FLEX-BOX, GRID, HTML, SCSS, чистый JS, адаптирован
-                            под разные разрешения экрана и устройств, адаптивные
-                            шрифты, адаптивные изображения, SVG sprite, SVG
-                            icon, SVG fonts.
-                          </div>
-                        </a>
-                      </article>
-                      <!-- zlatmax -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          zlatmax
-                        </div>
-                        <div class="body-portfolio__category">market</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/zlatmax/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/zlatmax.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/zlatmax.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием GULP, с технологией BEM,
-                            FLEX-BOX, GRID, HTML, SCSS, чистый JS, использован
-                            слайдер SWIPER, адаптирован под разные разрешения
-                            экрана и устройств, адаптивные шрифты, адаптивные
-                            изображения, SVG sprite, SVG icon, SVG fonts.
-                          </div>
-                        </a>
-                      </article>
-                      <!-- GoCorona -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          GoCorona
-                        </div>
-                        <div class="body-portfolio__category">landing</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/GoCorona/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/goCorona.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/goCorona.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием GULP, с технологией BEM,
-                            FLEX-BOX, HTML, SCSS, чистый JS, адаптирован под
-                            разные разрешения экрана и устройств, адаптивные
-                            шрифты, адаптивные изображения, адаптивные видео.
-                          </div>
-                        </a>
-                      </article>
-                      <!-- portfolio -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          portfolio
-                        </div>
-                        <div class="body-portfolio__category">landing</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/project-1/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/portfolio-1.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/portfolio-1.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием GULP, HTML, SCSS, чистый
-                            JS, адаптивные шрифты и изображения.
-                          </div>
-                        </a>
-                      </article>
-                      <!--  -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          batman
-                        </div>
-                        <div class="body-portfolio__category">kino</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/batman/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/batman.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/batman.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием технологией BEM, HTML,
-                            чистый CSS, чистый JS, адаптирован под разные
-                            разрешения экрана и устройств, адаптивные шрифты,
-                            адаптивные изображения.
-                          </div>
-                        </a>
-                      </article>
-                      <!-- 3D-Glo -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          3D-Glo
-                        </div>
-                        <div class="body-portfolio__category">market</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/3D-GLO/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/3Dglo.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/3Dglo.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием технологией BEM,
-                            BOOTSTRAP, HTML, чистый CSS, чистый JS, слайдер
-                            написан на чистом JS, адаптирован под разные
-                            разрешения экрана и устройств, адаптивные шрифты,
-                            адаптивные изображения.
-                          </div>
-                        </a>
-                      </article>
-                      <!-- organick -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          organick
-                        </div>
-                        <div class="body-portfolio__category">food</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/organick/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/organick.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/organick.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием GULP, с технологией BEM,
-                            FLEX-BOX, HTML, SCSS, чистый JS, адаптирован под
-                            разные разрешения экрана и устройств, адаптивные
-                            шрифты, адаптивные изображения, SVG sprite, SVG
-                            icon, SVG fonts.
-                          </div>
-                        </a>
-                      </article>
-                      <!-- growfy -->
-                      <article class="body-portfolio__card body-portfolio">
-                        <div id="portfolio-title" class="body-portfolio__title">
-                          growfy
-                        </div>
-                        <div class="body-portfolio__category">landing</div>
-                        <a
-                          id="portfolio-link"
-                          target="_blank"
-                          href="https://dfdev2.github.io/growfy/"
-                          class="body-portfolio__image">
-                          <span
-                            class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-                            <picture
-                              ><source
-                                srcset="img/main/growfy.webp"
-                                type="image/webp" />
-                              <img
-                                id="portfolio-img"
-                                src="img/main/growfy.jpg?_v=1685280925486"
-                                alt="Картинка"
-                            /></picture>
-                          </span>
-                          <div id="portfolio-info" class="body-portfolio__info">
-                            Разработан с использованием GULP, с технологией BEM,
-                            FLEX-BOX, GRID, HTML, SCSS, чистый JS, адаптирован
-                            под разные разрешения экрана и устройств, адаптивные
-                            шрифты, адаптивные изображения, SVG icon.
-                          </div>
-                        </a>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="contact">
-            <div id="cont" class="contact__container">
-              <!-- form -->
-              <div class="form">
-                <h2 class="form__title">Вы можете отправить мне сообщение</h2>
-                <form id="form" action="#" class="form__body">
-                  <!-- name -->
-                  <div class="form__item">
-                    <label for="formName" class="form__lable">Ваше имя</label>
-                    <input
-                      data-required="name"
-                      id="formName"
-                      autocomplete="off"
-                      type="text"
-                      name="name"
-                      class="form__input _req" />
-                  </div>
-                  <!-- email -->
-                  <div class="form__item">
-                    <label for="formEmail" class="form__lable">Ваш email</label>
-                    <input
-                      data-required="email"
-                      id="formEmail"
-                      autocomplete="off"
-                      type="email"
-                      name="email"
-                      class="form__input _req _email" />
-                  </div>
-                  <!-- message -->
-                  <div class="form__item">
-                    <label for="formMessage" class="form__lable"
-                      >Сообщение</label
-                    >
-                    <textarea
-                      data-message="message"
-                      id="formMessage"
-                      name="message"
-                      class="form__input form__message"
-                      id=""
-                      cols="30"
-                      rows="10"></textarea>
-                  </div>
-                  <button type="submit" class="form__button">Отправить</button>
-                </form>
-              </div>
-              <div class="contact__info">
-                <div class="contact__title">
-                  Вы можете связатьса по указанным контактам
-                </div>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo"><picture><source srcset="img/df.webp" type="image/webp"><img src="img/df.png?_v=1686237604767" alt="logo" /></picture></div>
+				<div data-da=".menu-header__body, 768" class="header__menu menu-header">
+					<ul class="menu-header__list">
+						<li class="menu-header__item">
+							<a id="contact" href="#cont" class="menu-header__link">Контакты</a>
+						</li>
+						<li class="menu-header__item">
+							<a id="portfolio" href="#port" class="menu-header__link">Портфолио</a>
+						</li>
+						<div class="menu-header__sel">
+							<select name="form[]" class="menu-header__language">
+								<option class="menu-header__ru" value="RU">РУ</option>
+								<option class="menu-header__en" value="EN">EN</option>
+								<option class="menu-header__de" value="DE">DE</option>
+							</select>
+						</div>
+					</ul>
+				</div>
+				<div class="menu-header__body"></div>
+				<div class="header__icon-menu icon-menu">
+					<span></span>
+				</div>
+			</div>
+			<div class="header__circle">
+				<picture><source srcset="img/Ellipse.webp" type="image/webp"><img src="img/Ellipse.png?_v=1686237604767" alt="Ellipse" /></picture>
+			</div>
+		</header>
 
-                <div class="contact__icons">
-                  <a href="@dfdev2" class="contact__image-ibg"
-                    ><img
-                      src="img/icons/telegram.svg?_v=1685280925486"
-                      alt="image"
-                  /></a>
-                  <a href="+380933196051" class="contact__image-ibg"
-                    ><img
-                      src="img/icons/whatsapp.svg?_v=1685280925486"
-                      alt="image"
-                  /></a>
-                  <a href="+380933196051" class="contact__image-ibg"
-                    ><img
-                      src="img/icons/viber.svg?_v=1685280925486"
-                      alt="image"
-                  /></a>
-                  <a href="" class="contact__image-ibg"
-                    ><img
-                      src="img/icons/facebook.svg?_v=1685280925486"
-                      alt="image"
-                  /></a>
-                  <a href="+380933196051" class="contact__number"
-                    >+380(93) 319 60 51</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__info">2022г.</div>
-        </div>
-      </footer>
-    </div>
-    <script src="js/app.min.js?_v=20230528153525"></script>
-  </body>
+		<main class="page">
+			<section class="page-main">
+				<div class="main__container">
+					<h1 id="we" class="main__title">Выполненые работы</h1>
+				</div>
+			</section>
+			<section class="page-portfolio portfolio">
+				<div class="portfolio__container">
+					<h2 id="subPort" class="portfolio__title">Портфолио</h2>
+					<div class="portfolio__block">
+						<div id="port" class="portfolio">
+							<div class="portfolio__container">
+								<div class="portfolio__body body-portfolio">
+									<div class="body-portfolio__item">
+										<!-- Relvise -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">Relvise</div>
+											<div class="body-portfolio__category">landing</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/relvise/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/relvise.webp" type="image/webp"><img id="portfolio-img" src="img/main/relvise.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="relvise" class="body-portfolio__info">
+													Разработан с использованием GULP, с технологией BEM, FLEX-BOX,
+													GRID, HTML, SCSS, чистый JS, адаптирован под разные разрешения
+													экрана и устройств, адаптивные шрифты, адаптивные изображения, SVG
+													sprite, SVG icon, SVG fonts.
+												</div>
+											</a>
+										</article>
+										<!-- Zlatmax -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">Zlatmax</div>
+											<div class="body-portfolio__category">market</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/zlatmax/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/zlatmax.webp" type="image/webp"><img id="portfolio-img" src="img/main/zlatmax.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="zlatmax" class="body-portfolio__info">
+													Разработан с использованием GULP, с технологией BEM, FLEX-BOX,
+													GRID, HTML, SCSS, чистый JS, использован слайдер SWIPER,
+													адаптирован под разные разрешения экрана и устройств, адаптивные
+													шрифты, адаптивные изображения, SVG sprite, SVG icon, SVG fonts.
+												</div>
+											</a>
+										</article>
+										<!-- GoCorona -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">GoCorona</div>
+											<div class="body-portfolio__category">landing</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/GoCorona/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/goCorona.webp" type="image/webp"><img id="portfolio-img" src="img/main/goCorona.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="GoCorona" class="body-portfolio__info">
+													Разработан с использованием GULP, с технологией BEM, FLEX-BOX,
+													HTML, SCSS, чистый JS, адаптирован под разные разрешения экрана и
+													устройств, адаптивные шрифты, адаптивные изображения, адаптивные
+													видео.
+												</div>
+											</a>
+										</article>
+										<!-- Portfolio -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">
+												Portfolio
+											</div>
+											<div class="body-portfolio__category">landing</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/project-1/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/portfolio-1.webp" type="image/webp"><img id="portfolio-img" src="img/main/portfolio-1.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="portfolioA" class="body-portfolio__info">
+													Разработан с использованием GULP, HTML, SCSS, чистый JS,
+													адаптивные шрифты и изображения.
+												</div>
+											</a>
+										</article>
+										<!-- Batman -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">Batman</div>
+											<div class="body-portfolio__category">kino</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/batman/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/batman.webp" type="image/webp"><img id="portfolio-img" src="img/main/batman.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="batman" class="body-portfolio__info">
+													Разработан с использованием технологией BEM, HTML, чистый CSS,
+													чистый JS, адаптирован под разные разрешения экрана и устройств,
+													адаптивные шрифты, адаптивные изображения.
+												</div>
+											</a>
+										</article>
+										<!-- 3D-Glo -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">3D-Glo</div>
+											<div class="body-portfolio__category">market</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/3D-GLO/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/3Dglo.webp" type="image/webp"><img id="portfolio-img" src="img/main/3Dglo.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="DGlo" class="body-portfolio__info">
+													Разработан с использованием технологией BEM, BOOTSTRAP, HTML,
+													чистый CSS, чистый JS, слайдер написан на чистом JS, адаптирован
+													под разные разрешения экрана и устройств, адаптивные шрифты,
+													адаптивные изображения.
+												</div>
+											</a>
+										</article>
+										<!-- Organick -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">Organick</div>
+											<div class="body-portfolio__category">food</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/organick/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/organick.webp" type="image/webp"><img id="portfolio-img" src="img/main/organick.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="organick" class="body-portfolio__info">
+													Разработан с использованием GULP, с технологией BEM, FLEX-BOX,
+													HTML, SCSS, чистый JS, адаптирован под разные разрешения экрана и
+													устройств, адаптивные шрифты, адаптивные изображения, SVG sprite,
+													SVG icon, SVG fonts.
+												</div>
+											</a>
+										</article>
+										<!-- Growfy -->
+										<article class="body-portfolio__card body-portfolio">
+											<div id="portfolio-title" class="body-portfolio__title">Growfy</div>
+											<div class="body-portfolio__category">landing</div>
+											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/growfy/" class="body-portfolio__image">
+												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
+													<picture><source srcset="img/main/growfy.webp" type="image/webp"><img id="portfolio-img" src="img/main/growfy.jpg?_v=1686237604767" alt="Картинка" /></picture>
+												</span>
+												<div id="growfy" class="body-portfolio__info">
+													Разработан с использованием GULP, с технологией BEM, FLEX-BOX,
+													GRID, HTML, SCSS, чистый JS, адаптирован под разные разрешения
+													экрана и устройств, адаптивные шрифты, адаптивные изображения, SVG
+													icon.
+												</div>
+											</a>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="contact">
+					<div id="cont" class="contact__container">
+						<!-- form -->
+						<div class="form">
+							<h2 id="formTitle" class="form__title">
+								Вы можете отправить мне сообщение
+							</h2>
+							<form id="form" action="#" class="form__body">
+								<!-- name -->
+								<div class="form__item">
+									<label id="yourName" for="formName" class="form__lable">Ваше имя</label>
+									<input data-required="name" id="formName" autocomplete="off" type="text" name="name" class="form__input _req" />
+								</div>
+								<!-- email -->
+								<div class="form__item">
+									<label id="yourEmail" for="formEmail" class="form__lable">Ваш email</label>
+									<input data-required="email" id="formEmail" autocomplete="off" type="email" name="email" class="form__input _req _email" />
+								</div>
+								<!-- message -->
+								<div class="form__item">
+									<label id="message" for="formMessage" class="form__lable">Сообщение</label>
+									<textarea data-message="message" id="formMessage" name="message" class="form__input form__message" id="" cols="30" rows="10"></textarea>
+								</div>
+								<button id="submit" type="submit" class="form__button">
+									Отправить
+								</button>
+							</form>
+						</div>
+						<div class="contact__info">
+							<div id="yuorContact" class="contact__title">
+								Вы можете связатьса по указанным контактам
+							</div>
+
+							<div class="contact__icons">
+								<a href="@dfdev2" class="contact__image-ibg"><img src="img/icons/telegram.svg?_v=1686237604767" alt="image" /></a>
+								<a href="+380933196051" class="contact__image-ibg"><img src="img/icons/whatsapp.svg?_v=1686237604767" alt="image" /></a>
+								<a href="+380933196051" class="contact__image-ibg"><img src="img/icons/viber.svg?_v=1686237604767" alt="image" /></a>
+								<a href="" class="contact__image-ibg"><img src="img/icons/facebook.svg?_v=1686237604767" alt="image" /></a>
+								<a href="+380933196051" class="contact__number">+380(93) 319 60 51</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info">2022 <span id="year"></span>.</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20230608172004"></script>
+</body>
+
 </html>
