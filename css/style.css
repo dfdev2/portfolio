@@ -311,6 +311,10 @@ body {
   padding: 3px;
 }
 
+.menu-header__language:focus {
+  outline: none;
+}
+
 .icon-menu {
   display: none;
 }
@@ -578,6 +582,10 @@ body {
 
 .form__button:hover {
   background-color: #3b8e08;
+}
+
+#buttonLable {
+  color: red;
 }
 
 .page {
