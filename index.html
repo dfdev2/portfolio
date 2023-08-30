@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-	<title>portfolio</title>
+	<title>wp_portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230703183838">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230830192915">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,219 +15,262 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<div class="header__logo"><picture><source srcset="img/df.webp" type="image/webp"><img src="img/df.png?_v=1688402318117" alt="logo" /></picture></div>
-				<div data-da=".menu-header__body, 768" class="header__menu menu-header">
-					<ul class="menu-header__list">
-						<li class="menu-header__item">
-							<a id="contact" href="#cont" class="menu-header__link">Contacts</a>
-						</li>
-						<li class="menu-header__item">
-							<a id="portfolio" href="#port" class="menu-header__link">Portfolio</a>
-						</li>
-						<div class="menu-header__sel">
-							<select name="form[]" class="menu-header__language">
-								<option class="menu-header__en" value="EN">EN</option>
-								<option class="menu-header__ru" value="RU">РУ</option>
-								<option class="menu-header__de" value="DE">DE</option>
-							</select>
+				<div class="header__logo">
+					<img src="img/icons/logo.svg?_v=1693416555611" alt="logo" />
+				</div>
+				<div id="header-menu" class="header__menu header-menu">
+					<div class="header-menu__lanq">
+						<div data-menu="en" class="header-menu__item button active" id="en">
+							EN
 						</div>
-					</ul>
+						<div data-menu="de" class="header-menu__item button" id="de">DE</div>
+						<div data-menu="ru" class="header-menu__item button" id="ru">RU</div>
+					</div>
 				</div>
-				<div class="menu-header__body"></div>
-				<div class="header__icon-menu icon-menu">
-					<span></span>
-				</div>
-			</div>
-			<div class="header__circle">
-				<picture><source srcset="img/Ellipse.webp" type="image/webp"><img src="img/Ellipse.png?_v=1688402318117" alt="Ellipse" /></picture>
 			</div>
 		</header>
 
 		<main class="page">
-			<section class="page-main">
+			<section class="main">
 				<div class="main__container">
-					<h1 id="we" class="main__title">Completed works</h1>
-				</div>
-			</section>
-			<section class="page-portfolio portfolio">
-				<div class="portfolio__container">
-					<h2 id="subPort" class="portfolio__title">Portfolio</h2>
-					<div class="portfolio__block">
-						<div id="port" class="portfolio">
-							<div class="portfolio__container">
-								<div class="portfolio__body body-portfolio">
-									<div class="body-portfolio__item">
-										<!-- Relvise -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">Relvise</div>
-											<div class="body-portfolio__category">landing</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/relvise/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/relvise.webp" type="image/webp"><img id="portfolio-img" src="img/main/relvise.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="relvise" class="body-portfolio__info">
-													Designed with GULP, with BEM technology, FLEX-BOX, GRID, HTML,
-													SCSS, pure JS, adapted to different resolutions screen and
-													devices, responsive fonts, responsive images, SVG sprite, SVG
-													icons, SVG fonts.
-												</div>
-											</a>
-										</article>
-										<!-- Zlatmax -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">Zlatmax</div>
-											<div class="body-portfolio__category">market</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/zlatmax/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/zlatmax.webp" type="image/webp"><img id="portfolio-img" src="img/main/zlatmax.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="zlatmax" class="body-portfolio__info">
-													Designed with GULP, with BEM technology, FLEX-BOX, GRID, HTML,
-													SCSS, pure JS, SWIPER slider used, adapted to different screen
-													resolutions and devices, adaptive fonts, responsive images, SVG
-													sprite, SVG icon, SVG fonts.
-												</div>
-											</a>
-										</article>
-										<!-- GoCorona -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">GoCorona</div>
-											<div class="body-portfolio__category">landing</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/GoCorona/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/goCorona.webp" type="image/webp"><img id="portfolio-img" src="img/main/goCorona.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="GoCorona" class="body-portfolio__info">
-													Designed with GULP, with BEM technology, FLEX-BOX, HTML, SCSS,
-													pure JS, adapted to different screen resolutions and devices,
-													responsive fonts, responsive images, responsive video.
-												</div>
-											</a>
-										</article>
-										<!-- Portfolio -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">
-												Portfolio
-											</div>
-											<div class="body-portfolio__category">landing</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/project-1/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/portfolio-1.webp" type="image/webp"><img id="portfolio-img" src="img/main/portfolio-1.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="portfolioA" class="body-portfolio__info">
-													Designed using GULP, HTML, SCSS, pure JS, adaptive fonts and
-													images.
-												</div>
-											</a>
-										</article>
-										<!-- Batman -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">Batman</div>
-											<div class="body-portfolio__category">kino</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/batman/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/batman.webp" type="image/webp"><img id="portfolio-img" src="img/main/batman.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="batman" class="body-portfolio__info">
-													Designed using BEM technology, HTML, pure CSS, pure JS, adapted to
-													different screen resolutions and devices, adaptive fonts, adaptive
-													images.
-												</div>
-											</a>
-										</article>
-										<!-- 3D-Glo -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">3D-Glo</div>
-											<div class="body-portfolio__category">market</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/3D-GLO/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/3Dglo.webp" type="image/webp"><img id="portfolio-img" src="img/main/3Dglo.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="DGlo" class="body-portfolio__info">
-													Designed using BEM, BOOTSTRAP, HTML, pure CSS, pure JS, slider
-													written in pure JS, adapted for different screen resolutions and
-													devices, adaptive fonts, adaptive images.
-												</div>
-											</a>
-										</article>
-										<!-- Organick -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">Organick</div>
-											<div class="body-portfolio__category">food</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/organick/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/organick.webp" type="image/webp"><img id="portfolio-img" src="img/main/organick.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="organick" class="body-portfolio__info">
-													Designed with GULP, with BEM technology, FLEX-BOX, HTML, SCSS,
-													pure JS, adapted to different screen resolutions and devices,
-													responsive fonts, responsive images, SVG sprite, SVG icons, SVG
-													fonts.
-												</div>
-											</a>
-										</article>
-										<!-- Growfy -->
-										<article class="body-portfolio__card body-portfolio">
-											<div id="portfolio-title" class="body-portfolio__title">Growfy</div>
-											<div class="body-portfolio__category">landing</div>
-											<a id="portfolio-link" target="_blank" href="https://dfdev2.github.io/growfy/" class="body-portfolio__image">
-												<span class="body-portfolio__image-ibg product-card__item__image-ibg_contain">
-													<picture><source srcset="img/main/growfy.webp" type="image/webp"><img id="portfolio-img" src="img/main/growfy.jpg?_v=1688402318117" alt="Картинка" /></picture>
-												</span>
-												<div id="growfy" class="body-portfolio__info">
-													Designed with GULP, with BEM technology, FLEX-BOX, GRID, HTML,
-													SCSS, pure JS, adapted to different resolutions screen and
-													devices, responsive fonts, responsive images, SVG icon.
-												</div>
-											</a>
-										</article>
-									</div>
-								</div>
-							</div>
+					<div class="main__content">
+						<h1 data-lang="mainTitle" class="main__title">
+							Hi my name is Farrukh
+						</h1>
+						<h4 data-lang="mainSub" class="main__sub-title subTitle">
+							I am a frontend developer
+						</h4>
+						<p data-lang="mainText" class="main__text">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+							perspiciatis soluta, alias provident facere est sequi eligendi
+							quidem delectus? Sequi?
+						</p>
+					</div>
+					<div class="main__media main-media">
+						<div class="main-media__image-ibg">
+							<picture><source srcset="img/main.webp" type="image/webp"><img src="img/main.jpg?_v=1693416555611" alt="image" /></picture>
 						</div>
-
 					</div>
 				</div>
 			</section>
+			<section>
+				<div class="projects">
+					<div class="projects__container">
+						<div class="project__items">
+							<!-- zlatmax -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/zlatmax.webp" type="image/webp"><img src="img/projects/zlatmax.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="zlatmaxType" class="project__type">market</div>
+									<h2 class="project__title subTitle">zlatmax</h2>
+									<div data-lang="zlatmaxInfo" class="project__info text">
+										Designed with GULP, with BEM technology, FLEX-BOX, GRID, HTML,
+										SCSS, pure JS, SWIPER slider used, adapted to different screen
+										resolutions and devices, adaptive fonts, responsive images, SVG
+										sprite, SVG icon, SVG fonts.
+									</div>
+									<a data-lang="zlatmaxLink" href="https://dfdev2.github.io/zlatmax/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- relvise -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/relvise.webp" type="image/webp"><img src="img/projects/relvise.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="relviseType" class="project__type">
+										Landing page
+									</div>
+									<h2 class="project__title subTitle">relvise</h2>
+									<div data-lang="relviseInfo" class="project__info text">
+										Designed with GULP, with BEM technology, FLEX-BOX, GRID, HTML,
+										SCSS, pure JS, adapted to different resolutions screen and
+										devices, responsive fonts, responsive images, SVG sprite, SVG
+										icons, SVG fonts.
+									</div>
+									<a data-lang="relviseLink" href="https://dfdev2.github.io/relvise/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- growfy -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/growfy.webp" type="image/webp"><img src="img/projects/growfy.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="growfyType" class="project__type">Landing page</div>
+									<h2 class="project__title subTitle">Growfy</h2>
+									<div data-lang="growfyInfo" class="project__info text">
+										Designed with GULP, with BEM technology, FLEX-BOX, GRID, HTML,
+										SCSS, pure JS, adapted to different resolutions screen and
+										devices, responsive fonts, responsive images, SVG icon.
+									</div>
+									<a data-lang="growfyLink" href="https://dfdev2.github.io/growfy/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- organic -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/organic.webp" type="image/webp"><img src="img/projects/organic.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="organicType" class="project__type">
+										Landing page
+									</div>
+									<h2 class="project__title subTitle">Organic</h2>
+									<div data-lang="organicInfo" class="project__info text">
+										Designed with GULP, with BEM technology, FLEX-BOX, HTML, SCSS,
+										pure JS, adapted to different screen resolutions and devices,
+										responsive fonts, responsive images, SVG sprite, SVG icons, SVG
+										fonts.
+									</div>
+									<a data-lang="organicLink" href="https://dfdev2.github.io/organick/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- gocorona -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/gocorona.webp" type="image/webp"><img src="img/projects/gocorona.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="gocoronaType" class="project__type">
+										Landing page
+									</div>
+									<h2 class="project__title subTitle">GoCorona</h2>
+									<div data-lang="gocoronaInfo" class="project__info text">
+										Designed with GULP, with BEM technology, FLEX-BOX, HTML, SCSS,
+										pure JS, adapted to different screen resolutions and devices,
+										responsive fonts, responsive images, responsive video.
+									</div>
+									<a data-lang="gocoronaLink" href="https://dfdev2.github.io/GoCorona/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- batman -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/batman.webp" type="image/webp"><img src="img/projects/batman.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="batmanType" class="project__type">Landing page</div>
+									<h2 class="project__title subTitle">Batman</h2>
+									<div data-lang="batmanInfo" class="project__info text">
+										Designed using BEM technology, HTML, pure CSS, pure JS, adapted to
+										different screen resolutions and devices, adaptive fonts, adaptive
+										images.
+									</div>
+									<a data-lang="batmanLink" href="https://dfdev2.github.io/batman/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- portfolio -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/portfolio-1.webp" type="image/webp"><img src="img/projects/portfolio-1.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="portfolioType" class="project__type">Portfolio</div>
+									<h2 class="project__title subTitle">Portfolio</h2>
+									<div data-lang="portfolioInfo" class="project__info text">
+										Designed using GULP, HTML, SCSS, pure JS, adaptive fonts and
+										images.
+									</div>
+									<a data-lang="portfolioLink" href="https://dfdev2.github.io/project-1/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+							<!-- 3dGlo -->
+							<div class="project__item">
+								<div class="project__image">
+									<div class="project__image-ibg">
+										<picture><source srcset="img/projects/3dGlo.webp" type="image/webp"><img src="img/projects/3dGlo.jpg?_v=1693416555611" alt="image" /></picture>
+									</div>
+								</div>
+								<div class="project__content">
+									<div data-lang="dGloType" class="project__type">Market</div>
+									<h2 class="project__title subTitle">3dGlo</h2>
+									<div data-lang="dGlolioInfo" class="project__info text">
+										Designed using BEM, BOOTSTRAP, HTML, pure CSS, pure JS, slider
+										written in pure JS, adapted for different screen resolutions and
+										devices, adaptive fonts, adaptive images.
+									</div>
+									<a data-lang="dGloLink" href="https://dfdev2.github.io/3D-GLO/" class="project__link button link_b" target="_blank">
+										See Project
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section>
 				<div class="contact">
 					<div id="cont" class="contact__container">
 						<!-- form -->
 						<div class="form">
-							<h2 id="formTitle" class="form__title">you can send me a message</h2>
+							<h2 data-lang="formTitle" class="form__title subTitle">
+								You can send me a message
+							</h2>
 							<form id="form" action="#" class="form__body">
 								<!-- name -->
 								<div class="form__item">
-									<label id="yourName" for="formName" class="form__lable">your name</label>
+									<label data-lang="yourName" for="formName" class="form__lable text">your name</label>
 									<input data-required="name" id="formName" autocomplete="off" type="text" name="name" class="form__input _req" />
 								</div>
 								<!-- email -->
 								<div class="form__item">
-									<label id="yourEmail" for="formEmail" class="form__lable">Your email</label>
+									<label data-lang="yourEmail" for="formEmail" class="form__lable text">Your email</label>
 									<input data-required="email" id="formEmail" autocomplete="off" type="email" name="email" class="form__input _req _email" />
 								</div>
 								<!-- message -->
 								<div class="form__item">
-									<label id="message" for="formMessage" class="form__lable">Message</label>
-									<textarea data-message="message" id="formMessage" name="message" class="form__input form__message" id="" cols="30" rows="10"></textarea>
+									<label data-lang="message" for="formMessage" class="form__lable text">Message</label>
+									<textarea id="formMessage" name="message" class="form__input form__message" id="" cols="30" rows="10"></textarea>
 								</div>
-								<label id="buttonLable" for="submit" class="form__lable">This option is temporarily unavailable</label>
-								<button disabled id="submit" type="submit" class="form__button">
+								<button data-lang="submit" disabled type="submit" class="form__button button link_b">
 									Send
 								</button>
+								<div data-lang="btnLabel" style="margin-top: 10px; color: red">
+									This feature is temporarily unavailable
+								</div>
 							</form>
 						</div>
 						<div class="contact__info">
-							<div id="yuorContact" class="contact__title">
-								You can contact the specified contacts
-							</div>
-
+							<h2 data-lang="yuorContact" id="yuorContact" class="contact__title subTitle">
+								you can contact on social media
+							</h2>
 							<div class="contact__icons">
-								<a href="@dfdev2" class="contact__image-ibg"><img src="img/icons/telegram.svg?_v=1688402318117" alt="image" /></a>
-								<a href="+380933196051" class="contact__image-ibg"><img src="img/icons/whatsapp.svg?_v=1688402318117" alt="image" /></a>
-								<a href="+380933196051" class="contact__image-ibg"><img src="img/icons/viber.svg?_v=1688402318117" alt="image" /></a>
-								<a href="" class="contact__image-ibg"><img src="img/icons/facebook.svg?_v=1688402318117" alt="image" /></a>
-								<a href="+380933196051" class="contact__number">+380(93) 319 60 51</a>
+								<a href="@dfdev2" class="contact__icon" target="_blank"><img src="img/icons/telegram.svg?_v=1693416555611" alt="image" /></a>
+								<a href="+4367761012527" class="contact__icon" target="_blank"><img src="img/icons/whatsapp.svg?_v=1693416555611" alt="image" /></a>
+								<a href="+4367761012527" class="contact__icon" target="_blank"><img src="img/icons/viber.svg?_v=1693416555611" alt="image" /></a>
+								<a href="https://www.facebook.com/profile.php?id=100087371985055" class="contact__icon" target="_blank"><img src="img/icons/facebook.svg?_v=1693416555611" alt="image" /></a>
 							</div>
 						</div>
 					</div>
@@ -236,12 +279,22 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__info">2022 <span id="year"></span>.</div>
+				<div class="footer__logo">
+					<img src="img/icons/logo.svg?_v=1693416555611" alt="logo" />
+				</div>
+				<div data-lang="footerText" class="footer__text text">
+					We are a hub of creativity, pushing the boundaries of whats possible.
+					Explore our cutting-edge solutions and witness the future unfold before
+					your eyes.
+				</div>
+				<div class="footer__link text">
+					<a data-lang="footerLink" href="/"></a>
+				</div>
 			</div>
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20230703183838"></script>
+	<script src="js/app.min.js?_v=20230830192915"></script>
 </body>
 
 </html>
