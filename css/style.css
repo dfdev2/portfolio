@@ -749,6 +749,14 @@ body {
     font-size: 0.75rem;
   }
 
+  .header-menu__item::before {
+    top: 0.125rem;
+  }
+
+  .header-menu__item::after {
+    top: 0.125rem;
+  }
+
   .main__content {
     padding: 0 0 0.3125rem 0;
     row-gap: 0.3125rem;
