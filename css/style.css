@@ -426,10 +426,12 @@ body {
 }
 
 .project__type {
+  line-height: 1.7777777778;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
   color: #15499f;
+  border-bottom: 1px solid #8c8c8c;
 }
 
 .project__link {
@@ -473,21 +475,21 @@ body {
 }
 
 .contact__info {
-  padding: 1.25rem 0.625rem;
+  padding: 1.25rem 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contact__icons {
@@ -497,11 +499,36 @@ body {
   -webkit-column-gap: 0.625rem;
      -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
+  color: #8c8c8c;
+  margin-bottom: 0.625rem;
+}
+
+.contact__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__icon img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.contact__freelance {
+  font-size: 1.125rem;
+  line-height: 1.1111111111;
+  font-weight: 500;
+  color: #8c8c8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__freelance div:not(:last-child) {
+  margin-right: 0.625rem;
 }
 
 .form {
@@ -751,10 +778,12 @@ body {
 
   .header-menu__item::before {
     top: 0.125rem;
+    right: 0.3125rem;
   }
 
   .header-menu__item::after {
     top: 0.125rem;
+    left: 0.3125rem;
   }
 
   .main__content {
@@ -830,6 +859,13 @@ body {
 
   .text {
     font-size: 0.875rem;
+  }
+
+  .contact__freelance {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .form__body {
