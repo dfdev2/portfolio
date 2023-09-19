@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Barlow:regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap);
 
 @charset "UTF-8";
 
@@ -23,7 +23,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Barlow";
+  font-family: "Roboto";
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -34,7 +34,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Barlow";
+  font-family: "Roboto";
   font-size: inherit;
 }
 
@@ -101,7 +101,7 @@ body {
 */
 
 [class*=__container] {
-  max-width: 87.5rem;
+  max-width: 75rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
@@ -387,6 +387,51 @@ body {
   min-width: 100%;
 }
 
+.skills {
+  padding: 0.625rem 0rem 0.625rem;
+  background-color: #edf7fa;
+}
+
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 31.25rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #21243d;
+}
+
+.skills__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.skills__list {
+  padding-left: 0.9375rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 2.125;
+}
+
+.skills__item {
+  position: relative;
+}
+
+.skills__item::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #21243d;
+  top: 14px;
+  left: -10px;
+}
+
 .project__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +508,7 @@ body {
 
 .contact {
   padding: 1.25rem 0;
+  background-color: #edf7fa;
 }
 
 .contact__container {
@@ -578,7 +624,7 @@ body {
 }
 
 .footer {
-  padding: 0 0 1.25rem 0;
+  padding: 1.25rem 0 1.25rem 0;
 }
 
 .footer__container {
@@ -636,7 +682,7 @@ body {
   min-width: 0;
 }
 
-@media (min-width: 89.375em) {
+@media (min-width: 76.875em) {
   .subTitle {
     font-size: 2rem;
   }
@@ -651,6 +697,18 @@ body {
 
   .main__title {
     font-size: 2.375rem;
+  }
+
+  .skills__title {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    padding-bottom: 3.125rem;
+  }
+
+  .projects {
+    padding-top: 4.375rem;
   }
 
   .project__item {
@@ -701,6 +759,18 @@ body {
 
   .main__title {
     font-size: 1.5rem;
+  }
+
+  .skills__title {
+    font-size: 1.125rem;
+  }
+
+  .projects {
+    padding-bottom: 0.625rem;
+  }
+
+  .projects {
+    padding-top: 0.625rem;
   }
 
   .project__item {
@@ -795,6 +865,13 @@ body {
     font-size: 0.875rem;
   }
 
+  .skills__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .project__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -828,6 +905,10 @@ body {
     min-width: 20rem;
     max-width: 100%;
     padding: 0.3125rem;
+  }
+
+  .footer {
+    padding: 0.625rem 0 0.625rem 0;
   }
 
   .footer__container {
@@ -873,41 +954,53 @@ body {
   }
 }
 
-@media (min-width: 20em) and (max-width: 89.375em) {
+@media (min-width: 20em) and (max-width: 76.875em) {
   .subTitle {
-    font-size: calc(1rem + 1 * (((100vw - 20rem)) / ((69.375))));
+    font-size: calc(1rem + 1 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .main {
-    padding-bottom: calc(0.625rem + 2.5 * (((100vw - 20rem)) / ((69.375))));
+    padding-bottom: calc(0.625rem + 2.5 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .main {
-    padding-top: calc(4.375rem + 8.125 * (((100vw - 20rem)) / ((69.375))));
+    padding-top: calc(4.375rem + 8.125 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .main__title {
-    font-size: calc(1.5rem + 0.875 * (((100vw - 20rem)) / ((69.375))));
+    font-size: calc(1.5rem + 0.875 * (((100vw - 20rem)) / ((56.875))));
+  }
+
+  .skills__title {
+    font-size: calc(1.125rem + 0.375 * (((100vw - 20rem)) / ((56.875))));
+  }
+
+  .projects {
+    padding-bottom: calc(0.625rem + 2.5 * (((100vw - 20rem)) / ((56.875))));
+  }
+
+  .projects {
+    padding-top: calc(0.625rem + 3.75 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .project__item {
-    margin-bottom: calc(0.625rem + 2.5 * (((100vw - 20rem)) / ((69.375))));
+    margin-bottom: calc(0.625rem + 2.5 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .project__content {
-    row-gap: calc(0.4375rem + 1.75 * (((100vw - 20rem)) / ((69.375))));
+    row-gap: calc(0.4375rem + 1.75 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .project__type {
-    font-size: calc(0.875rem + 0.25 * (((100vw - 20rem)) / ((69.375))));
+    font-size: calc(0.875rem + 0.25 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .contact__title {
-    margin-bottom: calc(0.625rem + 1.5625 * (((100vw - 20rem)) / ((69.375))));
+    margin-bottom: calc(0.625rem + 1.5625 * (((100vw - 20rem)) / ((56.875))));
   }
 
   .form__title {
-    margin-bottom: calc(0.625rem + 1.5625 * (((100vw - 20rem)) / ((69.375))));
+    margin-bottom: calc(0.625rem + 1.5625 * (((100vw - 20rem)) / ((56.875))));
   }
 }
 
