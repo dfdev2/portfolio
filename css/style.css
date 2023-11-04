@@ -316,12 +316,12 @@ body {
 
 .header-menu__item::before {
   right: 0.5rem;
-  top: 0.3125rem;
+  top: 0.25rem;
 }
 
 .header-menu__item::after {
   left: 0.5rem;
-  top: 0.3125rem;
+  top: 0.25rem;
 }
 
 .header-menu__item.active {
